@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>شركة تنظيف منازل بالسعودية | حجز فوري واتساب</title>
+  <meta name="description" content="شركة تنظيف منازل محترفة في السعودية: تنظيف شامل، تعقيم، تنظيف سجاد وكنب، تلميع أرضيات وخزائن. حجز سريع عبر واتساب وخدمة 24/7." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="شركة تنظيف منازل بالسعودية" />
+  <meta property="og:description" content="خدمة احترافية وسريعة بأسعار تنافسية. اتصل الآن أو راسلنا واتساب." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/cover.jpg" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/J6mdh3O6WcT6vGSH5v6N2Cq+9nUj1rR0jB2h1d5Zrj6QdW1x8e1fS5Q5z9Y2v5x1C2vGx3Ykg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root{
+      --primary:#0ea5e9; /* sky-500 */
+      --primary-dark:#0284c7; /* sky-600 */
+      --bg:#0b1220; /* dark navy */
+      --card:#0f172a; /* slate-900 */
+      --muted:#9aa4b2; /* slate-400 */
+      --ring: rgba(14,165,233,.35);
+      --success:#22c55e;
+      --warning:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:#fff;font-family:"Tajawal",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:100%;max-width:1100px;margin:auto;padding:0 16px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--primary);padding:.9rem 1.1rem;border-radius:14px;font-weight:700;box-shadow:0 6px 24px rgba(14,165,233,.25);transition:.2s}
+    .btn:hover{background:var(--primary-dark);transform:translateY(-1px)}
+    .btn.outline{background:transparent;border:1px solid #1f2a44}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .6rem;border-radius:999px;background:#0b2540;border:1px solid #103053;color:#9bd5ff;font-size:.8rem}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.7);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #10192b}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+    .logo{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .logo i{color:var(--primary)}
+    .nav .cta{display:flex;gap:.6rem}
+
+    .hero{position:relative;isolation:isolate}
+    .hero .bg{position:absolute;inset:0;background:radial-gradient(80% 60% at 50% 0%, rgba(14,165,233,.16), transparent 60%), linear-gradient(180deg, rgba(2,8,23,.0), rgba(2,8,23,.55));z-index:-1}
+    .hero .inner{display:grid;grid-template-columns:1fr;gap:18px;padding:28px 0 14px}
+    .hero h1{font-size:1.8rem;line-height:1.3;margin:6px 0}
+    .hero p{color:#cbd5e1}
+    .hero .actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:8px}
+    .hero .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+    .stat{background:linear-gradient(180deg,#0b1528,#0c1a31);border:1px solid #101f37;border-radius:16px;padding:10px;text-align:center}
+    .stat .num{font-size:1.1rem;font-weight:800}
+    .stat .lbl{font-size:.78rem;color:var(--muted)}
+
+    .section{padding:28px 0}
+    .sec-title{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:14px}
+    .sec-title h2{font-size:1.2rem;margin:0}
+    .grid{display:grid;gap:12px}
+    .services{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--card);border:1px solid #1b2a42;border-radius:18px;padding:14px;transition:.2s}
+    .card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(2,8,23,.35)}
+    .card i{font-size:1.1rem;color:var(--primary)}
+    .card h3{margin:.3rem 0 .2rem;font-size:1rem}
+    .card p{margin:0;color:#c5ced8;font-size:.9rem}
+
+    .features .item{display:flex;gap:10px;align-items:flex-start}
+    .features .icon{min-width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:#0b2540;border:1px solid #103053}
+
+    .steps{counter-reset:step}
+    .step{display:flex;gap:10px;align-items:flex-start}
+    .step .num{width:36px;height:36px;border-radius:999px;border:1px dashed #1f3b5e;display:grid;place-items:center;font-weight:800;color:#9bd5ff}
+
+    .faq details{background:#0e1a2f;border:1px solid #10203b;border-radius:14px;padding:10px}
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq p{color:#c5ced8}
+
+    .cta-banner{background:linear-gradient(135deg, rgba(14,165,233,.15), rgba(34,197,94,.12));border:1px solid #12314e;padding:16px;border-radius:18px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+
+    footer{border-top:1px solid #10192b;padding:20px 0;color:#aab4c3}
+    .footer-grid{display:grid;gap:16px}
+
+    /* Floating buttons */
+    .floating{position:fixed;inset-inline-start:12px;inset-block-end:12px;z-index:60;display:flex;flex-direction:column;gap:10px}
+    .fab{width:54px;height:54px;border-radius:999px;display:grid;place-items:center;background:#25D366;color:#fff;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+    .fab.call{background:#10b981}
+
+    /* Forms */
+    form input, form textarea, select{width:100%;background:#0a1427;border:1px solid #13243f;color:#e5edf7;border-radius:12px;padding:12px;outline:none}
+    form input:focus, form textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px var(--ring)}
+    .helper{font-size:.85rem;color:#9db1c7}
+
+    /* Responsive */
+    @media(min-width:768px){
+      .hero .inner{grid-template-columns:1.1fr .9fr;align-items:center}
+      .hero h1{font-size:2.2rem}
+      .services{grid-template-columns:repeat(3,1fr)}
+      .footer-grid{grid-template-columns:1.2fr .8fr .8fr}
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px; /* حجم الأيقونة */
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* مسافة صغيرة بين الأيقونة والاسم */
+    font-size: 24px; /* حجم النص */
+    font-weight: bold;
+    color: #0c72bb;
+    }
+    .logo img{
+        width: 100px; /* تصغير اللوجو */
+        height: auto;
+    }
+      
+    
+
+    
+   
+  </style>
+
+  
+
+  <!-- JSON-LD Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "شركة الغيلان كلين – تنظيف منازل",
+    "image": ""C:\Users\King\Downloads\download.jfif"",
+    "telephone": "+966 50 000 0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "SA",
+      "addressRegion": "الرياض",
+      "addressLocality": "الرياض",
+      "streetAddress": "—"
+    },
+    "areaServed": ["الرياض","جدة","الدمام","الخبر","مكة","المدينة"],
+    "url": "https://example.com",
+    "priceRange": "SAR —"
+  }
+  </script>
+</head>
+
+
+
+<body>
+  <!-- Floating CTA -->
+  <div class="floating" aria-label="أزرار تواصل سريعة">
+    <a class="fab" href="https://wa.me/966500000000" target="_blank" rel="noopener" aria-label="تواصل واتساب"><i class="fab fa-whatsapp"></i></a>
+    <a class="fab call" href="tel:+966500000000" aria-label="اتصال مباشر"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <div class="logo"><img src="C:\Users\King\Downloads\photo_2025-08-13_19-53-47-removebg-preview.png" alt="شعار الغيلان"></i> الغيلان </div>
+      <div class="cta">
+        <a class="btn outline" href="#services"><i class="fa-solid fa-broom"></i>&nbsp;الخدمات</a>
+        <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="whatsapp-btn">
+         <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="bg"></div>
+      <div class="container inner">
+        <div>
+          <span class="badge"><i class="fa-solid fa-shield-check"></i> ضمان رضا 100%</span>
+          <h1>تنظيف منازل في السعودية<br>سرعة، دقة، ونظافة تلمع ✨</h1>
+          <p>نقدّم حلول تنظيف عميقة وشاملة للمنازل والفلل والشقق. فريق سعودي/عربي مدرَّب، مواد معتمدة وآمنة، وجداول مرنة تناسبك.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/966500000000" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i>&nbsp;راسلنا الآن</a>
+            <a class="btn outline" href="#booking"><i class="fa-regular fa-calendar-check"></i>&nbsp;احجز زيارة</a>
+          </div>
+          <div class="metrics">
+            <div class="stat"><div class="num">+8,500</div><div class="lbl">عميل سعيد</div></div>
+            <div class="stat"><div class="num">4.9/5</div><div class="lbl">تقييمات جوجل</div></div>
+            <div class="stat"><div class="num">24/7</div><div class="lbl">خدمة طوارئ</div></div>
+          </div>
+        </div>
+        <picture>
+            <source srcset="https://i.pinimg.com/1200x/16/8b/dc/168bdcfe18542a489aa2d2d3203dfbad.jpg" type="image/jpeg">
+            <img src="https://i.pinimg.com/1200x/16/8b/dc/168bdcfe18542a489aa2d2d3203dfbad.jpg" alt="صورة من Pinterest">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="sec-title">
+          <h2>خدماتنا</h2>
+          <a class="btn outline" href="#booking">احجز الآن</a>
+        </div>
+        <div class="grid services">
+          <div class="card"><i class="fa-solid fa-spray-can-sparkles"></i><h3>تنظيف شامل للمنازل</h3><p>تنظيف يومي/أسبوعي، ترتيب، مسح الأسطح، وتعقيم دوري.</p></div>
+          <div class="card"><i class="fa-solid fa-couch"></i><h3>غسيل وتنجيد الكنب</h3><p>إزالة البقع والروائح، تعقيم بالبخار وتجفيف سريع.</p></div>
+          <div class="card"><i class="fa-solid fa-rug"></i><h3>تنظيف وغسيل السجاد</h3><p>غسيل عميق داخل الموقع أو استلام وتسليم.</p></div>
+          <div class="card"><i class="fa-solid fa-toilet"></i><h3>تعقيم الحمّامات والمطابخ</h3><p>مواد آمنة معتمدة، تركيز خاص على نقاط اللمس.</p></div>
+          <div class="card"><i class="fa-solid fa-house-circle-check"></i><h3>تنظيف ما بعد البناء</h3><p>إزالة مخلفات الدهان والغبار وتلميع الزجاج.</p></div>
+          <div class="card"><i class="fa-solid fa-broom-ball"></i><h3>تلميع أرضيات وبلاط</h3><p>تلميع رخام/سيراميك وشطف آمن للأخشاب.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section">
+      <div class="container grid features" style="grid-template-columns:1fr;gap:14px">
+        <div class="sec-title"><h2>ليش تختارنا؟</h2></div>
+        <div class="item"><div class="icon"><i class="fa-solid fa-id-card"></i></div><div><h3>فريق موثوق ومدرّب</h3><p>اختيار دقيق للكوادر، إشراف دوري وبطاقات تعريف.</p></div></div>
+        <div class="item"><div class="icon"><i class="fa-solid fa-flask"></i></div><div><h3>مواد معتمدة</h3><p>منظفات آمنة على العائلة والحيوانات الأليفة.</p></div></div>
+        <div class="item"><div class="icon"><i class="fa-solid fa-stopwatch"></i></div><div><h3>مواعيد مرنة</h3><p>زيارات صباحية ومسائية وخيارات عاجلة خلال 24 ساعة.</p></div></div>
+        <div class="item"><div class="icon"><i class="fa-solid fa-award"></i></div><div><h3>ضمان الرضا</h3><p>نرجع نعيد الخدمة مجانًا إذا ما كنت راضي.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="section">
+      <div class="container steps grid" style="grid-template-columns:1fr;gap:12px">
+        <div class="sec-title"><h2>كيف نشتغل؟</h2></div>
+        <div class="step"><div class="num">1</div><div><h3>تواصل سريع</h3><p>راسلنا واتساب وحدد نوع ومساحة المكان.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>عرض مخصص</h3><p>نعطيك خطة تنظيف وجدولة مناسبة لك.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>تنفيذ احترافي</h3><p>فريقنا يوصل بالوقت وينفذ القائمة كاملة.</p></div></div>
+        <div class="step"><div class="num">4</div><div><h3>ضمان ما بعد الخدمة</h3><p>متابعة رضاك وإعادة أي نقطة فوّتناها.</p></div></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-title"><h2>آراء العملاء</h2></div>
+        <div class="grid" style="grid-template-columns:1fr;gap:12px">
+          <div class="card"><p>“شغلهم ممتاز وسريع. رجع الكنب جديد!”</p><div class="helper">— أم عبدالله | الرياض</div></div>
+          <div class="card"><p>“خدمة محترمة والتزام بالمواعيد، أنصح فيهم.”</p><div class="helper">— خالد | جدة</div></div>
+          <div class="card"><p>“تعقيم رائع بعد التجديد، ما قصروا.”</p><div class="helper">— نورة | الخبر</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="section">
+      <div class="container">
+        <div class="sec-title"><h2>نخدم في</h2></div>
+        <div class="grid services" style="grid-template-columns:repeat(3,1fr)">
+          <div class="card"><h3>الرياض</h3><p>كامل الأحياء</p></div>
+          <div class="card"><h3>جدة</h3><p>شمال/جنوب</p></div>
+          <div class="card"><h3>الدمام</h3><p>المنطقة الشرقية</p></div>
+          <div class="card"><h3>الخبر</h3><p>كامل المدينة</p></div>
+          <div class="card"><h3>مكة</h3><p>الأحياء المركزية</p></div>
+          <div class="card"><h3>المدينة</h3><p>كامل النطاق</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="container">
+        <div class="sec-title"><h2>الأسئلة الشائعة</h2></div>
+        <div class="grid" style="grid-template-columns:1fr;gap:10px">
+          <details>
+            <summary>هل المواد آمنة على الأطفال؟</summary>
+            <p>نعم، نستخدم منظفات معتمدة ونسأل عن أي حساسية قبل البدء.</p>
+          </details>
+          <details>
+            <summary>هل أسعاركم تشمل الأدوات؟</summary>
+            <p>نعم، نوفر الأجهزة والمواد. لا نعرض الأسعار هنا بناءً على رغبتكم، نرسل عرضًا مخصصًا حسب المساحة.</p>
+          </details>
+          <details>
+            <summary>كم تستغرق الزيارة؟</summary>
+            <p>من 2 إلى 5 ساعات حسب المساحة وعدد الفنيين.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 style="margin:0">احجز زيارتك الآن</h2>
+          <p class="helper">املأ النموذج وسنتواصل معك خلال دقائق، أو راسلنا مباشرة عبر واتساب.</p>
+          <form id="bookForm" novalidate>
+            <div class="grid" style="grid-template-columns:1fr;gap:10px">
+              <input type="text" name="name" placeholder="الاسم الكامل" required>
+              <input type="tel" name="phone" placeholder="رقم الجوال (مثال: 05xxxxxxxx)" required>
+              <select name="city" required>
+                <option value="">المدينة</option>
+                <option>الرياض</option>
+                <option>جدة</option>
+                <option>الدمام</option>
+                <option>الخبر</option>
+                <option>مكة</option>
+                <option>المدينة</option>
+              </select>
+              <textarea name="notes" rows="3" placeholder="ملاحظات (اختياري)"></textarea>
+              <button class="btn" type="submit"><i class="fa-regular fa-paper-plane"></i>&nbsp;إرسال الطلب</button>
+            </div>
+            <div id="formMsg" class="helper" style="margin-top:8px"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:8px"><i class="fa-solid fa-sparkles"></i> الغيلان كلين</div>
+        <p>شركة سعودية لخدمات تنظيف المنازل والفلل والشقق. نتشرف بخدمتكم في مدن المملكة.</p>
+      </div>
+      <div>
+        <h3 style="margin:0 0 8px 0;font-size:1rem">تواصل</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:6px">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+966500000000">+966 50 000 0000</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/966500000000" target="_blank" rel="noopener">واتساب مباشر</a></li>
+          <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin:0 0 8px 0;font-size:1rem">ساعات العمل</h3>
+        <p>السبت – الخميس: 8 ص – 10 م<br>الجمعة: طوارئ</p>
+      </div>
+    </div>
+    <div class="container" style="margin-top:14px;font-size:.85rem;color:#8fa2b8">
+      © <span id="year"></span> الغيلان كلين – جميع الحقوق محفوظة.
+    </div>
+  </footer>
+
+  <script defer>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form handling (no backend): send to WhatsApp
+    const form = document.getElementById('bookForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const formData = new FormData(form);
+      const name = (formData.get('name')||'').trim();
+      const phone = (formData.get('phone')||'').trim();
+      const city = (formData.get('city')||'').trim();
+      const notes = (formData.get('notes')||'').trim();
+
+      if(!name || !phone || !city){
+        msg.textContent = 'فضلاً أكمل الحقول المطلوبة.';
+        msg.style.color = '#fca5a5';
+        return;
+      }
+      msg.textContent = '';
+
+      const text = `طلب حجز جديد:%0aالاسم: ${encodeURIComponent(name)}%0aالجوال: ${encodeURIComponent(phone)}%0aالمدينة: ${encodeURIComponent(city)}%0aملاحظات: ${encodeURIComponent(notes)}`;
+      const wa = `https://wa.me/+201204818221?text=${text}`;
+      window.open(wa,'_blank');
+    });
+  </script>
+</body>
+</html>
