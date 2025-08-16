@@ -178,12 +178,24 @@
   0% { transform: translateY(0px); }
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0px); }
-}
+  }
 
-.fab, .hero i, .card i {
-  animation: float 3s ease-in-out infinite;
-}
+  .fab, .hero i, .card i {
+    animation: float 3s ease-in-out infinite;
+  }
 
+  /* بداية العناصر مخفية */
+  .section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+  }
+
+  /* الكلاس اللي يضاف من الـ JS */
+  .section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
     
@@ -429,16 +441,14 @@
   const sections = document.querySelectorAll('.section');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show'); // يضيف الكلاس
+        observer.unobserve(entry.target);   // يتوقف عن المراقبة بعد ما يظهر
       }
     });
   }, { threshold: 0.2 });
 
   sections.forEach(sec => {
-    sec.style.opacity = '0';
-    sec.style.transform = 'translateY(40px)';
     observer.observe(sec);
   });
   </script>
