@@ -180,7 +180,7 @@
   100% { transform: translateY(0px); }
   }
 
-  .fab, .hero i, .card i {
+  .fab, .hero i, .card i ,.section{
     animation: float 3s ease-in-out infinite;
   }
 
@@ -223,6 +223,8 @@
     "url": "https://example.com",
     "priceRange": "SAR —"
   }
+
+  
   </script>
 </head>
 
@@ -438,19 +440,25 @@
       window.open(wa,'_blank');
     });
 
-  const sections = document.querySelectorAll('.section');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show'); // يضيف الكلاس
-        observer.unobserve(entry.target);   // يتوقف عن المراقبة بعد ما يظهر
-      }
-    });
-  }, { threshold: 0.2 });
 
-  sections.forEach(sec => {
-    observer.observe(sec);
-  });
+
+  
+  </script>
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // يضيف الكلاس
+          observer.unobserve(entry.target);   // يتوقف بعد ما يظهر
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(sec => {
+      observer.observe(sec);
+    });
   </script>
 </body>
 </html>
