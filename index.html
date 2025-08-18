@@ -400,7 +400,7 @@
         <ul style="list-style:none;padding:0;margin:0;display:grid;gap:6px">
           <li><i class="fa-solid fa-phone"></i> <a href="tel:+201204818221">+201204818221</a></li>
           <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+201204818221" target="_blank" rel="noopener">واتساب مباشر</a></li>
-          <li><i class="fa-regular fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+         
         </ul>
       </div>
       <div>
@@ -445,22 +445,19 @@
   
   </script>
   <script>
-    const sections = document.querySelectorAll('.section');
+  const sections = document.querySelectorAll('.section');
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show'); // يضيف الكلاس
-          observer.unobserve(entry.target);   // يتوقف بعد ما يظهر
-        }
-      });
-    }, { threshold: 0.2 });
-
-    sections.forEach(sec => {
-      observer.observe(sec);
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+      }
     });
-  </script>
+  },{
+    threshold: 0.3 // يعني يظهر لما 20% من العنصر يدخل الشاشة
+  });
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
 </body>
 </html>
-
-
